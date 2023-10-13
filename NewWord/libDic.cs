@@ -15,6 +15,20 @@ namespace NewWord
         {
             dictionary.Add(word, valueWord);
         }
+        static public string DictTest()
+        {
+            int jCount = 0;
+            foreach(var dict in dictionary)
+            {
+                while(jCount == 0)
+                {
+                    return dict.Key.ToString();
+                }
+            }
+            return "";
+        
+        }
+
 
     }
 }

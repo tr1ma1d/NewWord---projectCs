@@ -22,6 +22,14 @@ namespace NewWord
         public Test()
         {
             InitializeComponent();
+            TestExam();
+        }
+        private void TestExam()
+        {
+            lbTestQuet.Content = libDic.DictTest();
+
+        
+            
         }
     }
 }
