@@ -8,7 +8,8 @@ namespace NewWord
 {
     static internal class libDic
     {
-        static Dictionary<string, string> dictionary = new Dictionary<string, string>();
+   
+        static public Dictionary<string, string> dictionary = new Dictionary<string, string>();
         
     
         static public void DictWord(string word, string valueWord)
@@ -17,18 +18,20 @@ namespace NewWord
         }
         static public string DictTest()
         {
-            int jCount = 0;
+           
             foreach(var dict in dictionary)
-            {
-                while(jCount == 0)
-                {
-                    return dict.Key.ToString();
-                }
+            { 
+                return dict.Key.ToString();
             }
             return "";
         
         }
-
-
+     
+        static public bool DictChecked(string answer) 
+        {
+            string answerString = answer;
+            return dictionary.ContainsKey(answerString);
+         
+        }
     }
 }

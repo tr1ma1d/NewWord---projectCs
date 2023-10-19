@@ -9,14 +9,15 @@
         Background="#565656">
     <Grid>
         <TextBox x:Name ="tbAnswer" HorizontalAlignment="Left" Margin="64,109,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="110" Height="20"/>
-        <Label x:Name ="lbTestQuet" Content="/(0_0)\" HorizontalAlignment="Left" Margin="27,36,0,0" VerticalAlignment="Top"/>
-        <Button x:Name ="btContinue" Content="Continue" HorizontalAlignment="Left" Margin="76,142,0,0" VerticalAlignment="Top" Width="86" Height="22">
+        <Label x:Name ="lbTestQuet" Content="/(0_0)\" HorizontalAlignment="Left" Margin="28,30,0,0" VerticalAlignment="Top"/>
+        <Button x:Name ="btContinue" Content="Continue" HorizontalAlignment="Left" Margin="76,142,0,0" VerticalAlignment="Top" Width="86" Height="22" Click="btContinue_Click">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="11 11 11 11"/>
                 </Style>
             </Button.Resources>
         </Button>
+        <Label x:Name ="lbAnswerTrue" Content="Count Tries" HorizontalAlignment="Left" Margin="153,30,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
